@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Ubuntu", sans-serif; 
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../img/bg.png');
+    background-color: cornflowerblue;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.card {
+    width: 400px;
+    height: auto;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+    color: #f2f2f2;
+    padding: 40px 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card h2 {
+    color: #f2f2f2;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card #bar {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.card #bar::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    height: 3px;
+    left: 0;
+    right: 0;
+    border-radius: 3px;
+    background: #f2f2f2;
+}
+
+.card form .wrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+.card form input {
+    margin-top: 1.5rem;
+    flex: 1 1 0%;
+    padding: .5rem;
+    width: 305px;
+    color: #323323;
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    margin-bottom: 1.5rem;
+}
+
+.card form input::placeholder {
+    color: #323323;
+    font-style: italic;
+}
+
+.card form #search {
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    background-color: lightgrey;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.card form #search:hover {
+    background-color: #b4a90d;
+}
+
+.card form #search:active {
+    box-shadow: inset 2px rgba(255, 255, 255, 0.5);
+}
+
+#weather-data {
+    letter-spacing: .5px;
+    text-align: center;
+}
+
+#weather-data h3 {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#weather-data h3 span {
+    padding: 8px;
+}
+
+#weather-data h3 i {
+    color: gold;
+}
+
+#weather-data p {
+    padding: 5px;
+}
+
+.description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .6rem 0;
+}
+
+#description {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-container #humidity {
+    border-right: 1px solid #f2f2f2;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}

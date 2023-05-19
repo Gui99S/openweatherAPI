@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <section>
+
+        <div class="container">
+            <div class="card">
+                <h2>Check the Weather</h2>
+
+                <form class="wrapper">
+                    <input type="text" placeholder="Type a city name" id="city-input" />
+                    <button id="search">
+                        <i class="fa-solid fa-magnifying-glass"></i> 
+                    </button>
+                </form>
+
+                
+                <div id="weather-data" class="hide">
+                    <span id="bar"></span>
+                    <h3>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span id="city"></span>
+                        <img src="" alt="country flag" id="country" />
+                    </h3>
+                    <p id="temperature">
+                        <span></span>&deg;C
+                    </p>
+                    <div class="description-container">
+                        <p id="description">
+                            
+                        </p>
+                        <img src="" alt="weather condition" id="weather-icon" />
+                    </div>
+                    <div class="details-container">
+                        <p id="humidity">
+                            <i class="fa-solid fa-droplet"></i>
+                            <span></span>
+                        </p>
+                        <p id="wind">
+                            <i class="fa-solid fa-wind"></i>
+                            <span></span>
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>
