@@ -1,8 +1,3 @@
-// KEY
-// 1ca96ca6fc87a235f6c1477ef35c315a
-
-// https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=1ca96ca6fc87a235f6c1477ef35c315a
-
 const apiKEY = "1ca96ca6fc87a235f6c1477ef35c315a"; 
 
 const cityInput = document.querySelector("#city-input");
